@@ -60,6 +60,8 @@ set title                 " title of the window will be set to filename [+=-] (p
 """""""""""""""""""""""""""""""""""""""
 " Remap 
 """""""""""""""""""""""""""""""""""""""
+nnoremap <F2> :source $MYVIMRC<CR> " source vimrc without restarting vim
+
 " ---- tab switching
 nnoremap <PageUp>        :bprevious<CR>
 nnoremap <PageDown>      :bnext<CR>
