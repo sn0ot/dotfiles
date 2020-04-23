@@ -4,3 +4,4 @@
 	co = checkout
 	br = branch
 	st = status
+	logg = ! "f(){ git log --graph --oneline --decorate --color=always $@ | grep -v 'files* changed,' ; }; f"
