@@ -66,6 +66,9 @@ nnoremap <F2> :source $MYVIMRC<CR> " source vimrc without restarting vim
 nnoremap <PageUp>        :bprevious<CR>
 nnoremap <PageDown>      :bnext<CR>
 
+" ---- system clipboard 
+nnoremap <silent> <C-@> :call system("wl-copy", @")<CR>     " copy contents of '"' register into system clipboard
+xnoremap <silent> <C-@> :w !wl-copy<CR><CR>         " copy selection in visual mode directly to system clipboard
 
 """""""""""""""""""""""""""""""""""""""
 " Plugin Management (vim-plug) + configs & mapping
