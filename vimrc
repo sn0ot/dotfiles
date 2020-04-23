@@ -67,8 +67,10 @@ nnoremap <PageUp>        :bprevious<CR>
 nnoremap <PageDown>      :bnext<CR>
 
 " ---- system clipboard 
-nnoremap <silent> <C-@> :call system("wl-copy", @")<CR>     " copy contents of '"' register into system clipboard
-xnoremap <silent> <C-@> :w !wl-copy<CR><CR>         " copy selection in visual mode directly to system clipboard
+augroup wayland_clipboard
+    au!
+    au TextYankPost * call system("wl-copy", @")    " automatically copy last yank to system clipboard
+augroup END
 
 """""""""""""""""""""""""""""""""""""""
 " Plugin Management (vim-plug) + configs & mapping
