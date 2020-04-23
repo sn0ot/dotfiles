@@ -101,6 +101,10 @@ xmap ga <Plug>(EasyAlign)
 " Cheatsheet : gaip= start EasyAlign command (ga) for (i)nner (p)aragraph,
 " align around (=)
 
+" ---- Peek at contents of registers
+Plug 'junegunn/vim-peekaboo'
+" toggle fullscreen with spacebar
+
 " ----- A vim plugin to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
 set laststatus=2 " always show status line on the last window"
