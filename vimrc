@@ -106,6 +106,15 @@ call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } " will be loaded on the first invocation of NERDTreeToggle command
 map <C-n> :NERDTreeToggle<CR>
 
+" ----- Fuzzy finder
+" assumes fzf is already in installed on system and in $PATH
+Plug 'junegunn/fzf.vim'
+nnoremap <silent> <Leader>f    :Files<CR>    " Search file names from current cwd
+nnoremap <silent> <Leader>F    :Files ~/<CR> " Search file names from home dir
+nnoremap <silent> <Leader><CR> :Buffers<CR>  " Search list of open buffers
+nnoremap <silent> <Leader>/    :BLines<CR>   " Search current buffer
+nnoremap <silent> <Leader>`    :Marks<CR>    " Search list of marks
+
 " ----- Language Pack
 Plug 'sheerun/vim-polyglot'
 
