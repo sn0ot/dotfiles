@@ -72,6 +72,13 @@ augroup wayland_clipboard
     au TextYankPost * call system("wl-copy", @")    " automatically copy last yank to system clipboard
 augroup END
 
+" ----- window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-p> <C-w><C-p>
+
 """""""""""""""""""""""""""""""""""""""
 " Plugin Management (vim-plug) + configs & mapping
 """""""""""""""""""""""""""""""""""""""
@@ -122,6 +129,9 @@ let g:lightline = {'colorscheme': 'dracula'}
 
 " ----- A Vim plugin which shows a git diff in the 'gutter' (sign column)
 Plug 'airblade/vim-gitgutter'
+
+" ----- Resizing of vim windows
+Plug 'simeji/winresizer'
 
 "TO:DO follow instructions for ycm server
 "Plug 'ycm-core/YouCompleteMe'
