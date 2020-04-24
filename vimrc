@@ -64,6 +64,14 @@ nnoremap <F2> :source $MYVIMRC<CR> " source vimrc without restarting vim
 let mapleader = ' '
 let maplocalleader = ' '
 
+" ----- Moving Lines
+xnoremap <silent> <C-k> :move-2<cr>gv
+xnoremap <silent> <C-j> :move'>+<cr>gv
+xnoremap <silent> <C-h> <gv
+xnoremap <silent> <C-l> >gv
+xnoremap < <gv
+xnoremap > >gv
+
 " ---- tab switching
 nnoremap <PageUp>        :bprevious<CR>
 nnoremap <PageDown>      :bnext<CR>
