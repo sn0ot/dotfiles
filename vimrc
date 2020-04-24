@@ -114,6 +114,7 @@ nnoremap <silent> <Leader>F    :Files ~/<CR> " Search file names from home dir
 nnoremap <silent> <Leader><CR> :Buffers<CR>  " Search list of open buffers
 nnoremap <silent> <Leader>/    :BLines<CR>   " Search current buffer
 nnoremap <silent> <Leader>`    :Marks<CR>    " Search list of marks
+nnoremap <silent> <Leader>g    :Commits!<CR> " Search list of Git commits
 
 " ----- Language Pack
 Plug 'sheerun/vim-polyglot'
@@ -146,6 +147,9 @@ let g:lightline = {'colorscheme': 'dracula'}
 
 " ----- A Vim plugin which shows a git diff in the 'gutter' (sign column)
 Plug 'airblade/vim-gitgutter'
+
+" ----- Fugitive
+Plug 'tpope/vim-fugitive'
 
 " ----- Resizing of vim windows
 Plug 'simeji/winresizer', {'on': 'WinResizerStartResize'}
