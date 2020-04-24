@@ -131,7 +131,8 @@ let g:lightline = {'colorscheme': 'dracula'}
 Plug 'airblade/vim-gitgutter'
 
 " ----- Resizing of vim windows
-Plug 'simeji/winresizer'
+Plug 'simeji/winresizer', {'on': 'WinResizerStartResize'}
+map <C-e> :WinResizerStartResize<CR> 
 
 "TO:DO follow instructions for ycm server
 "Plug 'ycm-core/YouCompleteMe'
