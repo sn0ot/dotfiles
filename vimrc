@@ -61,6 +61,8 @@ set title                 " title of the window will be set to filename [+=-] (p
 " Remap 
 """""""""""""""""""""""""""""""""""""""
 nnoremap <F2> :source $MYVIMRC<CR> " source vimrc without restarting vim
+let mapleader = ' '
+let maplocalleader = ' '
 
 " ---- tab switching
 nnoremap <PageUp>        :bprevious<CR>
