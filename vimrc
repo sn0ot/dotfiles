@@ -117,11 +117,9 @@ set showmatch  " show matching brackets when text indicator is over them
 " <S+Tab> to jump out of parenthesis
 
 " ----- junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align', {'on': 'EasyAlign'}
+Plug 'junegunn/vim-easy-align'
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
-" Cheatsheet : gaip= start EasyAlign command (ga) for (i)nner (p)aragraph,
-" align around (=)
 
 " ---- Peek at contents of registers
 Plug 'junegunn/vim-peekaboo'
