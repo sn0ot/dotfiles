@@ -72,10 +72,6 @@ xnoremap <silent> <C-l> >gv
 xnoremap < <gv
 xnoremap > >gv
 
-" ---- tab switching
-nnoremap <PageUp>        :bprevious<CR>
-nnoremap <PageDown>      :bnext<CR>
-
 " ---- system clipboard 
 augroup wayland_clipboard
     au!
