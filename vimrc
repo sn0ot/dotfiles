@@ -82,13 +82,6 @@ augroup wayland_clipboard
     au TextYankPost * call system("wl-copy", @")    " automatically copy last yank to system clipboard
 augroup END
 
-" ----- window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-nnoremap <C-p> <C-w><C-p>
-
 """""""""""""""""""""""""""""""""""""""
 " Plugin Management (vim-plug) + configs & mapping
 """""""""""""""""""""""""""""""""""""""
@@ -154,6 +147,10 @@ Plug 'tpope/vim-fugitive'
 " ----- Resizing of vim windows
 Plug 'simeji/winresizer', {'on': 'WinResizerStartResize'}
 map <C-e> :WinResizerStartResize<CR> 
+
+" ----- Vim TMUX navigator
+Plug 'christoomey/vim-tmux-navigator'
+"let g:tmux_navigator_disable_when_zoomed = 1
 
 "TO:DO follow instructions for ycm server
 "Plug 'ycm-core/YouCompleteMe'
