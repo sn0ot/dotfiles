@@ -72,6 +72,10 @@ xnoremap <silent> <C-l> >gv
 xnoremap < <gv
 xnoremap > >gv
 
+" ----- Open new line below and above current line
+nnoremap <leader>o  o<esc>
+nnoremap <leader>O  O<esc>
+
 " ---- system clipboard 
 augroup wayland_clipboard
     au!
