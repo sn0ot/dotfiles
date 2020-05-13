@@ -26,7 +26,7 @@ set number                " show line numbers
 set relativenumber        " show the line number relative to the line with the cursor in front of each line
 set wrap                  " lines longer than width of the window will wrap and display continuously on the next line
 set linebreak             " break lines at a character in 'breakat' (like space for example) instead of last character that fits on screen
-set colorcolumn=90        " guard at column 90
+set colorcolumn=80        " guard at column 80
 
 " ----- searching
 set incsearch             " while typing a search command show where the pattern, as it was typed so far, matches
