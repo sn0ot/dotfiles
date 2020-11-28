@@ -5,3 +5,8 @@
 	br = branch
 	st = status
 	logg = ! "f(){ git log --graph --oneline --decorate --color=always $@ | grep -v 'files* changed,' ; }; f"
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
