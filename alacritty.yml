@@ -1,0 +1,38 @@
+
+# Font configuration 
+font:
+  normal:
+    family: "SourceCodePro"
+    style: Regular
+  bold:
+    family: "SourceCodePro"
+    style: Bold
+  italic:
+    family: "SourceCodePro"
+    style: Italic
+  bold_italic:
+    style: Bold Italic
+  size: 12.0
+
+# Colors (One Dark)
+colors:
+  primary:
+    background: '#282c34'
+    foreground: '#abb2bf'
+  cursor:
+    text:       CellBackground
+    #cursor:     '#528bff' # syntax-cursor-color
+    cursor:     '#61AFEF' # syntax-cursor-color
+  selection:
+    text:       CellForeground
+    background: '#3e4451' # syntax-selection-color
+  normal:
+    black:      '#5c6370' # mono-3
+    red:        '#e06c75' # red 1
+    green:      '#98c379'
+    yellow:     '#e5c07b' # orange 2
+    blue:       '#579dd7'
+    #blue:       '#61afef'
+    magenta:    '#c678dd'
+    cyan:       '#56b6c2'
+    white:      '#828997' # mono-2

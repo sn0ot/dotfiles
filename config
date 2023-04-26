@@ -265,6 +265,11 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+### Apps
+# mako notification daemon
+exec mako --default-timeout 5000 --border-size 3
+# start thunar daemon 
+exec thunar --daemon
 
 #
 #Hardware
